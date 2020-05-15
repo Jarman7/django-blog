@@ -14,3 +14,6 @@ blogsite/__pycache__/__init__.cpython-36.pyc
 blogsite/__pycache__/settings.cpython-36.pyc
 blogsite/__pycache__/urls.cpython-36.pyc
 blogsite/__pycache__/wsgi.cpython-36.pyc
+blog/__pycache__/tests.cpython-36.pyc
+blog/__pycache__/models.cpython-36.pyc
+
