@@ -1,0 +1,14 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet"> 
+
+<div class="navbar">
+    <a class="logo" href={% url 'blog:index' %}>
+        <img src="{% static 'blog/logo.png' %}">
+    </a>
+    <ul>
+        <li class="nav-link"><a href={% url 'blog:index' %}>Contact</a></li>
+        <li class="nav-link"><a href={% url 'blog:index' %}>About</a></li>
+        <li class="nav-link"><a href={% url 'blog:index' %}>Projects</a></li>
+    </ul>
+</div>

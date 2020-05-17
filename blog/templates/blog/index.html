@@ -1,9 +1,18 @@
-{% if post_list %}
-    <ul>
-    {% for post in post_list %}
-        <li><a href="{% url 'blog:detail' post.slug %}">{{ post.title }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No posts available.</p>
-{% endif %}
+{% include "blog/navbar.html" %}
+<div class="content">
+    {% if post_list %}
+        <dl class="blog-list">
+        {% for post in post_list %}
+            <div class="post-details">
+                <a href="{% url 'blog:detail' post.slug %}">
+                    <dt>{{ post.title }}</dt>
+                    <p>{{ post.description }}</p>
+                    <dd>{{ post.created_on }}</dd>
+                </a>
+            </div>
+        {% endfor %}
+        </dl>
+    {% else %}
+        <p>No posts available.</p>
+    {% endif %}
+</div>

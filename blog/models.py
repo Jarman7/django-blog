@@ -12,9 +12,10 @@ class Category(models.Model):
 
 
 class Post(models.Model):
-    title = models.CharField(max_length=200)
+    title = models.CharField(max_length=100)
     slug = models.SlugField(unique=True)
     image = models.FileField(blank=True)
+    description = models.CharField(max_length=400)
     text = models.TextField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE) 
     updated_on = models.DateTimeField(auto_now=True)

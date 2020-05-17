@@ -1,0 +1,111 @@
+*{
+    font-size: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 15%;
+    overflow: visible;
+    background-color: #2f2fa2;
+    position: sticky;
+    top: 0;
+}
+
+.nav-link {
+    float: right;
+    padding-inline: 1cm;
+}
+
+.navbar ul {
+    float: right;
+    list-style-type: none;
+    margin: auto;
+}
+
+.navbar li a {
+    display: inline-block;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: #f64c72;
+}
+
+.navbar .logo img {
+    max-height: 10%;
+    max-width: 15%;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0; 
+    display: inline-block;
+}
+
+
+body {
+    background-color: #2f2fa2;
+}
+
+.content {
+    max-width: 25%;
+    margin: auto;
+    text-align: center;
+}
+
+.blog-detail {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.blog-detail h1 {
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.blog-detail p {
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+.blog-list {
+    list-style: inside;
+    text-align: center;
+}
+
+.post-details {
+    margin-top: 2cm;
+}
+
+.post-details a {
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+    text-align: left;
+}
+
+.post-details a:hover {
+    color: #f64c72;
+}
+
+.post-details a p {
+    margin: 0;
+    text-align: left;
+    font-size: large;
+}
+
+.post-details a dd {
+    font-size: large;
+    text-align: left;
+    color: #f64c72;
+    margin: 0;
+}
