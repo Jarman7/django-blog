@@ -1,0 +1,12 @@
+{% include "blog/navbar.html" %}
+
+<div class="content">
+    <div class="Form">
+        <h1>Contact Me</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Send Message" />
+        </form>
+    </div>
+</div>

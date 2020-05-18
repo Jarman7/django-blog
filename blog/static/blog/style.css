@@ -59,6 +59,18 @@ body {
     text-align: center;
 }
 
+.content h1 {
+    color: white;
+    font-size: xx-large;
+    margin-top: 2cm;
+}
+
+.not-available p {
+    padding-top: 3cm;
+    color: white;
+    font-size: x-large;
+}
+
 .blog-detail {
     max-width: 50%;
     margin: auto;
@@ -77,9 +89,56 @@ body {
     text-align: center;
 }
 
+.blog-detail .updated {
+    color: #f64c72;
+    font-size: medium;
+    text-align: left;
+}
+
 .blog-list {
     list-style: inside;
     text-align: center;
+}
+
+.about {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.about-info {
+    padding-top: 5cm;
+    color: white;
+    font-size: x-large;
+    text-align: left;
+}
+
+.about-info h1 {
+    font-size: xx-large;
+}
+
+.about-info p {
+    margin: 0;
+}
+
+.about-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.about-info a:hover {
+    color: #f64c72;
+    text-decoration: none;
+}
+
+.about-info .updated {
+    margin: 0;
+    font-size: medium;
+    color: #f64c72;
+}
+
+.about-info .name {
+    color: #f64c72;
 }
 
 .post-details {
@@ -108,4 +167,52 @@ body {
     text-align: left;
     color: #f64c72;
     margin: 0;
+}
+
+.form {
+    color: white;
+    margin: auto;
+    font-size: large;
+}
+
+.form h1 {
+    font-size: xx-large;
+}
+
+.form label {
+    float: left;
+    font-size: x-large;
+}
+
+.form input {
+    width: 100%;
+    color: white;
+    background-color: #2f2fa2;
+    border: 2px solid #f64c72;
+    border-radius: 4px;
+}
+
+.form textarea{
+    width: 100%;
+    color: white;
+    background-color: #2f2fa2;
+    border: 2px solid #f64c72;
+    border-radius: 4px;
+}
+
+.thanks {
+    padding-top: 3cm;
+}
+
+.thanks h1 {
+    font-size: xx-large;
+}
+
+.thanks p {
+    font-size: x-large;
+}
+
+.thanks a {
+    text-decoration: none;
+    color: white;
 }

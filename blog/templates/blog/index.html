@@ -1,6 +1,7 @@
 {% include "blog/navbar.html" %}
 <div class="content">
     {% if post_list %}
+        <h1>Blog Posts:</h1>
         <dl class="blog-list">
         {% for post in post_list %}
             <div class="post-details">
@@ -13,6 +14,8 @@
         {% endfor %}
         </dl>
     {% else %}
-        <p>No posts available.</p>
+        <div class="not-available">
+            <p>No posts available</p>
+        </div>
     {% endif %}
 </div>
