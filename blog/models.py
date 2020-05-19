@@ -27,7 +27,7 @@ class Post(models.Model):
 class About(models.Model):
     name = models.CharField(max_length=100)
     text = models.TextField()
-    image = models.FileField()
+    image = models.FileField(blank=True)
     github = models.URLField()
     linkedin = models.URLField()
     instagram = models.URLField()
