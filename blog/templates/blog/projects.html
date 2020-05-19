@@ -1,0 +1,21 @@
+{% include "blog/navbar.html" %}
+<div class="content">
+    {% if projects_list %}
+        <h1>Projects:</h1>
+        <dl class="blog-list">
+        {% for project in projects_list %}
+            <div class="post-details">
+                <a href="{% url 'blog:project-detail' project.slug %}">
+                    <dt>{{ project.title }}</dt>
+                    <p>{{ project.description }}</p>
+                    <dd>{{ project.created_on }}</dd>
+                </a>
+            </div>
+        {% endfor %}
+        </dl>
+    {% else %}
+        <div class="not-available">
+            <p>No projects available</p>
+        </div>
+    {% endif %}
+</div>

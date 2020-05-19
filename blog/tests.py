@@ -27,7 +27,7 @@ def create_user(username, password):
     return User.objects.create_user(username=username, password=password)
 
 
-class IndexViewTests(TestCase):
+class HomeViewTests(TestCase):
     def test_no_posts(self):
         """
         If no posts have been posted, display message
