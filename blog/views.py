@@ -7,11 +7,16 @@ from django.urls import reverse
 from .models import Post, About, Project
 from .forms import ContactForm
 
+from snowplow_tracker import Emitter, Tracker
+
 class HomeView(generic.ListView):
     template_name = 'blog/index.html'
     context_object_name = 'post_list'
+    e = Emitter("localhost:9090")
+    t = Tracker(e)
 
     def get_queryset(self):
+        self.t.track_page_view("localhost:8000/home/", "home")
         return Post.objects.filter(
             created_on__lte=timezone.now()
         ).order_by('-created_on')
