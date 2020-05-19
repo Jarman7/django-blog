@@ -14,37 +14,13 @@ class Category(models.Model):
 class Post(models.Model):
     title = models.CharField(max_length=100)
     slug = models.SlugField(unique=True)
+    image = models.FileField(blank=True)
     description = models.CharField(max_length=400)
     text = models.TextField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE) 
     updated_on = models.DateTimeField(auto_now=True)
     created_on = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.title
-
-
-class About(models.Model):
-    name = models.CharField(max_length=100)
-    text = models.TextField()
-    image = models.FileField()
-    github = models.URLField()
-    linkedin = models.URLField()
-    instagram = models.URLField()
-    updated_on = models.DateTimeField(auto_now=True)
-
-    def __str__(self):
-        return self.name
-
-
-class Project(models.Model):
-    title = models.CharField(max_length=100)
-    slug = models.SlugField(unique=True)
-    description = models.CharField(max_length=400)
-    text = models.TextField()
-    repo_link = models.URLField() 
-    updated_on = models.DateTimeField(auto_now=True)
-    created_on = models.DateTimeField(auto_now_add=True)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
